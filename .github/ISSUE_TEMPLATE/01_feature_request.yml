@@ -1,56 +1,41 @@
-name: Feature Request
-description: Submit a feature request for a project
-title: "[Feature]: "
-labels: []
+
+name: Feature
+description: Propose new functionality or improvements.
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thank you for submitting a feature request. Please provide as much detail as possible.
-  
-  # - type: dropdown
-  #   id: project
-  #   attributes:
-  #     label: Project
-  #     description: Select the project this feature request is for
-  #     options:
-  #       - Project A
-  #       - Project B
-  #       - Project C
-  #       - Other
-  #   validations:
-  #     required: true
-  
   - type: textarea
     id: context
     attributes:
       label: Context
-      description: Provide context for this feature request. What problem does it solve?
-      placeholder: Describe the context and background for this feature...
+      description: What problem are we solving, and why?
+      placeholder: Explain the problem or opportunity.
     validations:
       required: true
-  
+
   - type: textarea
-    id: requirements
+    id: outcome
     attributes:
-      label: Requirements
-      description: List the specific requirements for this feature
+      label: Desired outcome
+      description: What should the feature accomplish?
+      placeholder: Describe the expected behavior or result.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What must be true for this feature to be complete?
       placeholder: |
-        - Requirement 1
-        - Requirement 2
-        - Requirement 3
+        - [ ] Expected behavior works
+        - [ ] Relevant checks pass
     validations:
       required: true
-  
-  - type: dropdown
-    id: priority
+
+  - type: textarea
+    id: references
     attributes:
-      label: Priority
-      description: What is the priority level for this feature?
-      options:
-        - Low
-        - Medium
-        - High
-        - Critical
+      label: References and constraints
+      description: Optional documentation, designs, dependencies, or technical constraints.
+      placeholder: Links or additional context.
     validations:
-      required: true
+      required: false
