@@ -1,0 +1,31 @@
+name: Task
+description: Track setup, maintenance, refactoring, documentation, or other engineering work.
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What needs to be done, and why?
+      placeholder: Describe the task and its context.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What must be true to consider this task complete?
+      placeholder: |
+        - [ ] Required change is implemented
+        - [ ] Relevant checks pass
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes and references
+      description: Optional links, dependencies, risks, or implementation constraints.
+      placeholder: Add useful context for a developer or coding agent.
+    validations:
+      required: false
